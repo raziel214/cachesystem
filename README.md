@@ -74,10 +74,9 @@ Se recomienda agregar un prefijo a las etiquetas, por ejemplo, la letra «v» si
 
 ### Requisitos
 
-- .NET Core 8
-- Docker
+- Java 17
 - Git
-- SQL Server
+- Redis
 ## Dependencias del proyecto
 1. Spring Boot 3.3.4: Framework principal para construir la aplicación.
 2. Spring Data Redis: Integración con Redis para manejo de caché distribuido.
