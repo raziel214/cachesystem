@@ -59,8 +59,6 @@ Este proyecto utiliza git flow para la gestion del branching como se explica en 
 
 Deben existir dos ramas principales para que el flujo de trabajo funcione correctamente:
 
- 
-
 master
 develop
 GitFlow creará por defecto los siguiente prefijos para las ramas auxiliares, los cuales ayudan a identificar y tener control en el repositorio:
@@ -97,38 +95,16 @@ Se recomienda agregar un prefijo a las etiquetas, por ejemplo, la letra «v» si
 
 4. Debe  tener ejecutar el siguiente comando para descargar redis:
    ```bash
-   sudo docker run --name redis-cache -p 6379:6379 -d redis
+   docker pull redis
+   docker run --name redis-cache -p 6379:6379 -d redis
 
 5. Abrir el proyecto en el properties se debe parametrizar el redis:
    ```bash
    spring.redis.host=localhost
    spring.redis.port=6379
-6. esto crea datos por default para probar la aplicación el pass del usuario es:
+6. Ejecutar la aplicación con el contendor arriba:
    ```bash
-   Email soulreavers214@gmail.com Password "Taylor/1214."
-   Endponit de generacion de tokens 
-   http://localhost:62329/login
-## Docker
-7. en la configuracion de docker se utilizó la configuración sugerida por visual studio  con la siguiente imagen
-   ```bash
-   mcr.microsoft.com/dotnet/aspnet:8.0-nanoserver-1809;
-para realizar la prueba de docker en local se debe compilar desde visual studio el docker este descarga las dependencias y agrega la imagen al repositorio local de contenedores  luego desde 
-desde la raiz del proyecto ejecutas los siguientes comandos.
--  choco install make
-
-- make all
-10.   debe salir algo similar a esto
-![Ejecucción Make all](img/makeall.png)
-![Ejecucción Make all](img/makeall2.png)
-se crean las imagenes necesarias para el funcionamiento de la aplicación
-## GithubActions
-
-- name: Define el nombre del flujo de trabajo. En este caso, es "push flow .yml".
-- on: Especifica cuándo debe ejecutarse el flujo de trabajo. Este flujo de trabajo se activa cuando hay un pull request sobre la rama  develop.
-- jobs: Define los trabajos que se ejecutarán. Acon las instalaciones correspondientes.
-- steps: Dentro del trabajo build, se definen varios pasos para ejecutar los jobs.
-- se deben asignar las credenciales en los secretos de github del repositorio para conectarse a docker hub y descargar las imagenes.
-
-DOCKER_USERNAME: Tu nombre de usuario de DockerHub.
-DOCKER_PASSWORD: Tu contraseña de DockerHub.
+   Corre en la Url http://localhost:8080/swagger-ui/index.html#/
+   como se muestra en la imagen
+![Endpoint en ejecucción](img/EndPoint.png)
 
