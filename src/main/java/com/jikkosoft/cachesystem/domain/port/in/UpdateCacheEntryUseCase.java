@@ -1,5 +1,7 @@
 package com.jikkosoft.cachesystem.domain.port.in;
 
-public interface UpdateCacheEntryUseCase {
+import com.jikkosoft.cachesystem.domain.model.CacheEntry;
 
+public interface UpdateCacheEntryUseCase {	
+	 void updateCacheEntry(CacheEntry entry);
 }

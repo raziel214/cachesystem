@@ -87,31 +87,29 @@ Se recomienda agregar un prefijo a las etiquetas, por ejemplo, la letra «v» si
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/HotelBookingSolution.git
-2. Debe tener instalado Docker en el equipo si no lo puedes descargar de la siguiente url:
+   git clone https://github.com/raziel214/cachesystem.git
+2. Debe tener instalado el ide sts:
    ```bash
-   https://www.docker.com/
-3. Debe  tener instalado Sqlserver en el equipo si no lo puedes descargar de la siguiente url:
+   https://spring.io/tools
+3. Debe  tener instalado Docker para ejecutar redis:
    ```bash
-   https://www.microsoft.com/es-co/sql-server/sql-server-downloads
+   https://www.docker.com/products/docker-desktop/
 
-4. Debe  tener instalado el ide visual studio o visual Studio code en el equipo si no lo puedes descargar de la siguiente url:
+4. Debe  tener ejecutar el siguiente comando para descargar redis:
    ```bash
-   https://visualstudio.microsoft.com/es/downloads/
+   sudo docker run --name redis-cache -p 6379:6379 -d redis
 
-5. Abrir el proyecto en visual studio y compilarlo, crear la base de datos HotelReservationsDB  y configurar  la base de datos  parametrizar el usuario en el archivo app.settings y ejecutar el siguiente comando :
+5. Abrir el proyecto en el properties se debe parametrizar el redis:
    ```bash
-   update-database en la consola de paquetes nugets
-6. Para agregar una nueva migración se debe abrir la terminal ingresar en la ruta del paquete infraestructure y ejecutar el siguiente comando:
-   ```bash
-   dotnet ef migrations add Nombre de la migración --startup-project ../WebApi.csproj
-7. esto crea datos por default para probar la aplicación el pass del usuario es:
+   spring.redis.host=localhost
+   spring.redis.port=6379
+6. esto crea datos por default para probar la aplicación el pass del usuario es:
    ```bash
    Email soulreavers214@gmail.com Password "Taylor/1214."
    Endponit de generacion de tokens 
    http://localhost:62329/login
 ## Docker
-8. en la configuracion de docker se utilizó la configuración sugerida por visual studio  con la siguiente imagen
+7. en la configuracion de docker se utilizó la configuración sugerida por visual studio  con la siguiente imagen
    ```bash
    mcr.microsoft.com/dotnet/aspnet:8.0-nanoserver-1809;
 para realizar la prueba de docker en local se debe compilar desde visual studio el docker este descarga las dependencias y agrega la imagen al repositorio local de contenedores  luego desde 

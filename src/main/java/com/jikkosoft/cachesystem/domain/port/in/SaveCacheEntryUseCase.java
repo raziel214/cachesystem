@@ -1,5 +1,8 @@
 package com.jikkosoft.cachesystem.domain.port.in;
 
-public interface SaveCacheEntryUseCase {
+import com.jikkosoft.cachesystem.domain.model.CacheEntry;
 
+
+public interface SaveCacheEntryUseCase {
+	void save(CacheEntry cacheEntry);
 }
