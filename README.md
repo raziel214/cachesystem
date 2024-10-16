@@ -1,6 +1,6 @@
 # Cachesystem Jikkosoft
 
-Este proyecto implementa una solución de cache distribuida, utilizando una arquitectura orientada al dominio (Hexagonal) con Spring Boot y Redis.
+Este proyecto implementa una solución de cache distribuida, utilizando una arquitectura de puertos y adaptadores (Hexagonal) con Spring Boot y Redis.
 
 ## Índice
 
