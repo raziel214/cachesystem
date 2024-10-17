@@ -1,14 +1,14 @@
-package com.jikkosoft.cachesystem.aplicaction.service;
+package com.jikkosoft.cachesystem.sesion.aplicaction.service;
 
 import java.util.List;
 
-import com.jikkosoft.cachesystem.domain.model.CacheEntry;
-import com.jikkosoft.cachesystem.domain.port.in.DeleteCacheEntryUseCase;
-import com.jikkosoft.cachesystem.domain.port.in.FetchAllCacheEntryUseCase;
-import com.jikkosoft.cachesystem.domain.port.in.FindByIdCacheEntryUseCase;
-import com.jikkosoft.cachesystem.domain.port.in.SaveCacheEntryUseCase;
-import com.jikkosoft.cachesystem.domain.port.in.UpdateCacheEntryUseCase;
-import com.jikkosoft.cachesystem.domain.port.in.FetchAllCacheEntryUseCase;
+import com.jikkosoft.cachesystem.sesion.domain.model.CacheEntry;
+import com.jikkosoft.cachesystem.sesion.domain.port.in.DeleteCacheEntryUseCase;
+import com.jikkosoft.cachesystem.sesion.domain.port.in.FetchAllCacheEntryUseCase;
+import com.jikkosoft.cachesystem.sesion.domain.port.in.FindByIdCacheEntryUseCase;
+import com.jikkosoft.cachesystem.sesion.domain.port.in.SaveCacheEntryUseCase;
+import com.jikkosoft.cachesystem.sesion.domain.port.in.UpdateCacheEntryUseCase;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.jikkosoft.cachesystem.infraestructure.config;
+package com.jikkosoft.cachesystem.sesion.infraestructure.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

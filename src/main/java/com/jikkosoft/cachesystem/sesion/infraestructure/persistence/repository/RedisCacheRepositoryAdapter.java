@@ -1,10 +1,10 @@
-package com.jikkosoft.cachesystem.infraestructure.persistence.repository;
+package com.jikkosoft.cachesystem.sesion.infraestructure.persistence.repository;
 
 import java.util.List;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
-import com.jikkosoft.cachesystem.domain.model.CacheEntry;
-import com.jikkosoft.cachesystem.domain.port.out.CacheRepositoryPort;
+import com.jikkosoft.cachesystem.sesion.domain.model.CacheEntry;
+import com.jikkosoft.cachesystem.sesion.domain.port.out.CacheRepositoryPort;
 
 @Component
 public class RedisCacheRepositoryAdapter implements CacheRepositoryPort {

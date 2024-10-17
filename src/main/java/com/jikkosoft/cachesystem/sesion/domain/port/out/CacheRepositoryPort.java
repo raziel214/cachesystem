@@ -1,8 +1,10 @@
-package com.jikkosoft.cachesystem.domain.port.out;
+package com.jikkosoft.cachesystem.sesion.domain.port.out;
 
 import java.util.List;
 
-import com.jikkosoft.cachesystem.domain.model.CacheEntry;
+import com.jikkosoft.cachesystem.sesion.domain.model.CacheEntry;
+
+
 
 public interface CacheRepositoryPort {
 	

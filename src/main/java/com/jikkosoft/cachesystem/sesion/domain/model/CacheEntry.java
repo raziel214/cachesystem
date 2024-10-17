@@ -1,4 +1,4 @@
-package com.jikkosoft.cachesystem.domain.model;
+package com.jikkosoft.cachesystem.sesion.domain.model;
 
 import java.time.LocalDateTime;
 

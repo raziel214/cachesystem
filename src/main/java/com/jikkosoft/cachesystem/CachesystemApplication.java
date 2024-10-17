@@ -7,9 +7,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.redis.repository.configuration.EnableRedisRepositories;
 
 
-@SpringBootApplication(scanBasePackages = "com.jikkosoft.cachesystem")
-@ComponentScan(basePackages = "com.jikkosoft.cachesystem")
-@EnableRedisRepositories(basePackages = {"com.jikkosoft.cachesystem"})
+@SpringBootApplication(scanBasePackages = "com.jikkosoft.cachesystem.sesion")
+@ComponentScan(basePackages = "com.jikkosoft.cachesystem.sesion")
+@EnableRedisRepositories(basePackages = {"com.jikkosoft.cachesystem.sesion"})
 
 public class CachesystemApplication {
 

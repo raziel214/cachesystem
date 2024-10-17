@@ -1,7 +1,7 @@
-package com.jikkosoft.cachesystem.infraestructure.controller;
+package com.jikkosoft.cachesystem.sesion.infraestructure.controller;
 
-import com.jikkosoft.cachesystem.domain.model.CacheEntry;
-import com.jikkosoft.cachesystem.domain.port.in.*;
+import com.jikkosoft.cachesystem.sesion.domain.model.CacheEntry;
+import com.jikkosoft.cachesystem.sesion.domain.port.in.*;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;

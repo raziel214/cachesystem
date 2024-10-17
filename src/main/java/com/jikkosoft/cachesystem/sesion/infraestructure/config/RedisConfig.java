@@ -1,8 +1,8 @@
-package com.jikkosoft.cachesystem.infraestructure.config;
+package com.jikkosoft.cachesystem.sesion.infraestructure.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import com.jikkosoft.cachesystem.domain.model.CacheEntry;
+import com.jikkosoft.cachesystem.sesion.domain.model.CacheEntry;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
