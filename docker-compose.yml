@@ -1,0 +1,30 @@
+services:
+  redis:
+    image: redis:7.4-alpine
+    container_name: cachesystem-redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    volumes:
+      - redis-data:/data
+
+  app:
+    build: .
+    container_name: cachesystem-app
+    depends_on:
+      redis:
+        condition: service_healthy
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: "6379"
+      SERVER_PORT: "8080"
+      SPRING_PROFILES_ACTIVE: docker
+    ports:
+      - "8080:8080"
+
+volumes:
+  redis-data:
